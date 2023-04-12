@@ -1,0 +1,11 @@
+@function toRem($px) {
+    $result: calc($px / 16) + rem;
+    @return $result;
+}
+@function toPrc($child, $parent) {
+    @return calc($child / $parent) * 100%;
+}
+@function toEm($px, $fontSize) {
+    $result: calc($px / $fontSize) + em;
+    @return $result;
+}

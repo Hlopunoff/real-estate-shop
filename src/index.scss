@@ -1,0 +1,29 @@
+@import './styles/fonts';
+@import './styles/icons';
+:root {
+  --bg-light-primary: #fff;
+  --bg-light-secondary: #F9F9FA;
+  --text-light-primary: #212121;
+  --text-light-secondary: #213342;
+  --btn-primary: #E31F26;
+  --subtext-light: #7798B5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+button {
+  cursor: pointer;
+  background-color: var(--btn-primary);
+  color: #fff;
+}
+
+.container {
+  max-width: 1290px;
+  padding: 0 5px;
+  margin: 0 auto;
+}

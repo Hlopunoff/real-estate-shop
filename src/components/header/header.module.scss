@@ -1,0 +1,74 @@
+@import '../../styles/func';
+
+.header {
+    padding: toEm(10, 16) 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: toEm(3, 16);
+    &__logo {
+        max-width: 176px;
+        max-height: 50px;
+        .logo {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &__links {
+        display: flex;
+        align-items: center;
+        column-gap: toEm(19, 16);
+        list-style-type: none;
+        color: var(--text-light-secondary);
+        font-size: clamp(toRem(14), 1.5vw, toRem(16));
+    }
+    &__link {
+        line-height: toPrc(20, 16);
+        font-weight: 400;
+        font-style: normal;
+        cursor: pointer;
+        &:hover {
+            color: var(--btn-primary);
+        }
+        &Text {
+            &:first-child::before {
+                color: var(--btn-primary);
+                margin-right: toEm(3, 16);
+            }
+        }
+    }
+    &__call {
+        text-decoration: none;
+        color: var(--text-light-secondary);
+        font-style: normal;
+        font-weight: 600;
+        font-size: clamp(toRem(18), 1.5vw, toRem(20));
+        line-height: toPrc(24, 20);
+        &::before {
+            font-size: toRem(14);
+            color: var(--btn-primary);
+            margin-right: toEm(3, 14);
+        }
+    }
+    &__socials {
+        display: flex;
+        align-items: center;
+        column-gap: toEm(10, 16);
+        list-style-type: none;
+    }
+    &__social {
+        font-size: toRem(20);
+        color: var(--btn-primary);
+        cursor: pointer;
+    }
+    &__consultation {
+        padding: toEm(14, 18) toEm(19, 18);
+        font-style: normal;
+        font-weight: 400;
+        font-size: clamp(toRem(16), 1.5vw, toRem(18));
+        line-height: toPrc(22, 18);
+        border: none;
+        border-radius: 5px;
+    }
+}
