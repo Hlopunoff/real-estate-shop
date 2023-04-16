@@ -1,0 +1,38 @@
+@import '../../styles/func';
+.submenu {
+    position: absolute;
+    display: none;
+    top: toEm(35, 16);
+    left: toEm(-15, 16);
+    max-width: toEm(293, 16);
+    background-color: var(--bg-light-primary);
+    box-shadow: 0px 5px 10px rgba(119, 152, 181, 0.4);
+    border-radius: 10px;
+    list-style-type: none;
+    @media (max-width: 768px) {
+        position: static;
+        background-color: var(--bg-dark-primary);
+        box-shadow: none;
+    }
+    &__item {
+        padding: toEm(9, 16) toEm(20, 16);
+        border-bottom: 1px solid #D9E4ED;
+        white-space: nowrap;
+        &:last-child {
+            border-bottom: none;
+        }
+        @media (max-width: 768px) {
+            border: none;
+        }
+    }
+    &__link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: toRem(16);
+        line-height: toPrc(20, 16);
+        color: var(--subtext-light);
+        @media (max-width: 768px) {
+            color: #fff;
+        }
+    }
+}

@@ -7,6 +7,7 @@
   --text-light-secondary: #213342;
   --btn-primary: #E31F26;
   --subtext-light: #7798B5;
+  --bg-dark-primary: #213342;
 }
 
 * {
@@ -20,6 +21,10 @@ button {
   cursor: pointer;
   background-color: var(--btn-primary);
   color: #fff;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
