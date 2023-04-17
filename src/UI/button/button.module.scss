@@ -1,0 +1,12 @@
+@import '../../styles/func';
+.button {
+    padding: toEm(14, 18) toEm(19, 18);
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(toRem(14), 1.5vw, toRem(18));
+    line-height: toPrc(22, 18);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: var(--btn-primary);
+}

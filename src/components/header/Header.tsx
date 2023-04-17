@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useMatchMedia } from '../../hooks';
-import { SubMenu } from '../../UI/submenu';
+import { Button, SubMenu } from '../../UI';
 
 import s from './header.module.scss';
 import logo from '../../assets/img/main-logo.png';
@@ -148,7 +148,7 @@ export const Header = () => {
                     </ul>
                 )}
                 {isMobile ? null :
-                    (<button className={s['header__consultation']}>Консультация</button>)
+                    (<Button text='Консультация'/>)
                 }
             </header>
         </div>

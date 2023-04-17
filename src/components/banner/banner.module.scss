@@ -1,0 +1,62 @@
+@import '../../styles/func';
+.banner {
+    position: relative;
+    width: 100%;
+    max-height: toEm(630, 16);
+    padding-top: toEm(209, 16);
+    padding-bottom: toEm(161, 16);
+    background-image: url('../../assets/img/banner.png');
+    background-color: rgba(33, 33, 33, 0.5);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    @media (max-width: 768px) {
+        text-align: center;
+    }
+    @media (max-width: 576px) {
+        padding-top: toEm(175, 16);
+        padding-bottom: toEm(90, 16);
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: clamp(toRem(30), 4.5vw, toRem(60));
+        line-height: toPrc(60, 60);
+    }
+    &__subtitle {
+        font-size: clamp(toRem(20), 4.5vw, toRem(40));
+        font-style: normal;
+        font-weight: 400;
+        line-height: toPrc(49, 40);
+    }
+    &__cta {
+        margin-top: toEm(40, 16);
+        display: flex;
+        align-items: center;
+        column-gap: toEm(20, 16);
+        @media (max-width: 768px) {
+            justify-content: center;
+            margin-top: toEm(20, 16);
+        }
+        @media (max-width: 576px) {
+            flex-direction: column;
+            row-gap: toEm(10, 16);
+            & span {
+                display: none;
+            }
+        }
+    }
+    &__freeTrial {
+        font-style: normal;
+        font-weight: 600;
+        font-size: toRem(18);
+        line-height: toPrc(22, 18);
+        color: #fff;
+        text-decoration: underline;
+        @media (max-width: 576px) {
+            font-size: toRem(16);
+        }
+    }
+}

@@ -13,7 +13,6 @@
     &__logo {
         max-width: 176px;
         max-height: 50px;
-        margin: 0 auto;
         cursor: pointer;
         .logo {
             width: 100%;
@@ -24,6 +23,7 @@
             max-width: toEm(142, 16);
         }
         @media(max-width: 768px) {
+            margin: 0 auto;
             grid-column-start: 2;
             z-index: 1;
         }
@@ -255,14 +255,5 @@
         @media (max-height: 1140px) {
             padding: toEm(9, 20);
         }
-    }
-    &__consultation {
-        padding: toEm(14, 18) toEm(19, 18);
-        font-style: normal;
-        font-weight: 400;
-        font-size: clamp(toRem(14), 1.5vw, toRem(18));
-        line-height: toPrc(22, 18);
-        border: none;
-        border-radius: 5px;
     }
 }
